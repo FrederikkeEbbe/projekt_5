@@ -121,7 +121,151 @@ footer {
     padding: 20px;
 }
 
-/*forsiden*/
+/*index*/
+/*skal rykkes op*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/*header i index*/
+.index-header {
+    background-image: url('/indhold/img/closeup-gylden-mark.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+
+#index-logo {
+    font-size: 30px;
+}
+
+.bm-box{
+    width: 32px;
+    height: 32px;
+    background-color: #F2F2F2;
+}
+
+.index-header-contain {
+    padding: 8px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.index-hero-contain {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.index-hero-h2 {
+    color: #F2F2F2;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.index-hero-p {
+    color: #F2F2F2;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.btn-index {
+    background-color: #214029;
+    color: #F2F2F2;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+.btn-index:hover {
+    opacity: .95;
+}
+
+.btn-index:active {
+    background-color: #325935;
+}
+
+
+/*cards slide*/
+.index-card-sec {
+    padding: 16px 32px;
+}
+
+.card-index-et {
+    margin: 24px 0px;
+    padding: 16px 24px;
+    background-color: #F2F2F2;
+    max-width: 350px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-index-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px 10px;
+}
+
+.card-number {
+    font-size: 60px;
+}
+
+.card-index-p p {
+    margin-bottom: 20px;
+}
+
+.card-index-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*index  små kategorier*/
+.index-kategori-section img {
+    max-width: 100%;
+}
+
+.index-kategori-section-contain {
+    padding: 16px 32px;
+}
+
+.index-kategori-fakta {
+    background-color: #325935;
+    color: #F2F2F2;
+    padding: 24px 32px;
+    margin: 16px 0px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.index-kategori-fakta p {
+   font-size: 22px;
+   font-style: italic;
+}
+
+
 
 /*nyheder*/
 
