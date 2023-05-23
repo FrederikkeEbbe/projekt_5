@@ -152,11 +152,15 @@ input[type=text], select, textarea {
     height: 64px;
     flex-direction: column;
     justify-content: space-around;
-    border: red dashed 1px;
     
 }
 
-
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
 
 input[type=checkbox] {
     width: 20px;
@@ -166,7 +170,13 @@ input[type=checkbox] {
 input[type=submit] {
  background-color: #325935;
  color: #F2F2F2;
- border-radius: 8px;
+ border-radius: 20px;
  cursor: pointer;
+ height: 48px;
+ font-size: 18px;
+ margin: 24px 0px;
+ width: 60%;
+ max-width: 350px;
+ align-self: center;
 
 }
