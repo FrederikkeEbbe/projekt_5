@@ -75,8 +75,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px;
 }
 
 .footer-logo {
@@ -88,8 +87,7 @@ footer {
 .footer-headline {
     color: #F2F2F2;
     font-weight: 600;
-    margin-bottom: -10px;
-    margin-top: 20px;
+    padding-top: 15px;
 }
 
 .footer-text {
@@ -97,17 +95,17 @@ footer {
     font-weight: 300;
 }
 
-.footer-kontakt-text {
-    margin-left: 30px;
-}
-
 .footer-kontakt {
     background-color: #5E8C5D;
     width: 100%;
+    padding: 32px;
+}
+
+.footer-kontakt-text {
+    padding-top: 0px;
 }
 
 .footer-copyright {
-    height: 48px;
     width: 100%;
 }
 
@@ -115,6 +113,8 @@ footer {
     font-size: 10px;
     font-weight: 100;
     color: #132623;
+    text-align: center;
+    padding: 20px;
 }
 
 /*forsiden*/
