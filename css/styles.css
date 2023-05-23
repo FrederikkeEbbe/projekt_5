@@ -1,4 +1,4 @@
-/*body*/
+/*universalt*/
 body {
     background-color: green;
     font-family: basic-sans, sans-serif;
@@ -56,11 +56,6 @@ p3 {
 
 /*header*/
 
-/*logo*/
-
-/*h1*/
-
-/*h2*/
 
 /*footer*/
 
@@ -68,6 +63,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer-general {
     background-color: #325935;
     height: 386px;
