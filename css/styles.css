@@ -12,26 +12,64 @@ body {
 /*h2*/
 
 /*footer*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
 .footer-general {
     background-color: #325935;
     height: 386px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.footer-logo {
+    color: #97BF7A;
 }
 
 .footer-container-one {
     margin-left: 30px;
 }
 
+.footer-container-two {
+    margin-right: 30px;
+}
+
 .footer-headline {
     color: #F2F2F2;
     font-weight: 600;
+    margin-bottom: -10px;
+    margin-top: 20px;
 }
 
 .footer-text {
     color: #F2F2F2;
     font-weight: 300;
+    line-height: 20px;
+}
+
+.footer-kontakt-text {
+    margin-left: 30px;
+}
+
+.footer-kontakt {
+    background-color: #5E8C5D;
+    width: 100%;
+}
+
+.footer-copyright {
+    height: 48px;
+    width: 100%;
+}
+
+.footer-copyright-text {
+    font-size: 10px;
+    font-weight: 100;
+    color: #132623;
 }
 
 /*forsiden*/
