@@ -12,6 +12,27 @@ body {
 /*h2*/
 
 /*footer*/
+.footer-general {
+    background-color: #325935;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-container-one {
+    margin-left: 30px;
+}
+
+.footer-headline {
+    color: #F2F2F2;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: #F2F2F2;
+    font-weight: 300;
+}
 
 /*forsiden*/
 
