@@ -1,7 +1,58 @@
 /*body*/
 body {
     background-color: green;
+    font-family: basic-sans, sans-serif;
 }
+
+.logo {
+    font-family: strenuous, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.625em;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p2 {
+    font-size: 1.75em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p3 {
+    font-size: 1.125em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 
 /*header*/
 
