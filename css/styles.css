@@ -8,10 +8,11 @@ body {
     background-color: green;
     font-family: basic-sans, sans-serif;
     background-color: #F2F2F2;
+    font-size: 1em;
 }
 
 .logo {
-    font-size: 2.5em;
+    font-size: 40px;
     color: #325935;
     font-family: strenuous, sans-serif;
     font-weight: 700;
@@ -19,43 +20,43 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: 900;
     font-style: normal;
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 36px;
     font-weight: 700;
     font-style: normal;
 }
 
 h3 {
-    font-size: 1.625em;
+    font-size: 26px;
     font-weight: 600;
     font-style: normal;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 600;
     font-style: normal;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 300;
     font-style: normal;
 }
 
 p2 {
-    font-size: 1.75em;
+    font-size: 28px;
     font-weight: 400;
     font-style: italic;
 }
 
 p3 {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
 }
@@ -126,3 +127,22 @@ footer {
 /*kategori*/
 
 /*om os*/
+
+/*kontakt*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0px 8px 0px;
+    resize: vertical;
+}
+
+input[type=submit] {
+ background-color: #325935;
+ color: #F2F2F2;
+ border-radius: 8px;
+ cursor: pointer;
+
+}
