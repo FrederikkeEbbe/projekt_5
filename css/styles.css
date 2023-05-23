@@ -75,11 +75,13 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
+    gap: 40px;
 }
 
 .footer-logo {
     color: #97BF7A;
+    font-family: strenuous, sans-serif;
+    font-size: 22px;
 }
 
 .footer-container-one {
