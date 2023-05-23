@@ -180,3 +180,15 @@ input[type=submit] {
  align-self: center;
 
 }
+
+section.information {
+    background-color: #5E8C5D;
+    color: #F2F2F2;
+    padding: 32px;
+}
+
+section.faq {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
