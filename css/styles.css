@@ -128,10 +128,12 @@ footer {
 /*kategori*/
 
 /*om os*/
+.hero-om-os {
+    padding: 32px;
+}
 
 /*kontakt*/
 .kontaktformular {
-padding: 32px;
 display: flex;
 flex-direction: column;
 
@@ -179,6 +181,10 @@ input[type=submit] {
  max-width: 350px;
  align-self: center;
 
+}
+
+section.kontakt-os {
+    padding: 32px;
 }
 
 section.information {
