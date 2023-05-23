@@ -238,6 +238,10 @@ body {
 }
 
 /*index  små kategorier*/
+.index-kategori-section {
+    background-color: #F2F2F2;
+}
+
 .index-kategori-section img {
     max-width: 100%;
 }
@@ -265,6 +269,24 @@ body {
    font-style: italic;
 }
 
+/*Index - cards m billeder*/
+.card-index-to {
+    margin: 24px 0px;
+    background-color: #F2F2F2;
+    max-width: 350px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-index-to-contain {
+    padding: 16px 24px;
+}
+
+.card-index-to img {
+    max-width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
 
 
 /*nyheder*/
