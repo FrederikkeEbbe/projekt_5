@@ -839,6 +839,15 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 
 /*kontakt*/
+
+.hero-kontakt-os {
+    height: 64px;
+    display: flex;
+    background-color: #325935;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .kontaktformular {
     display: flex;
     flex-direction: column;
