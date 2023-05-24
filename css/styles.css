@@ -209,6 +209,7 @@ body {
 
 /*note note*/
 .card-index-et {
+    max-width: 350px;
     margin: 24px 0px;
     padding: 16px 24px;
     background-color: #F2F2F2;
@@ -241,9 +242,6 @@ body {
 
 /*index card et responsive*/
 
-.wrapper-index #carousel {
-    white-space: nowrap;
-}
 
 
 /*index  små kategorier*/
