@@ -424,8 +424,8 @@ body {
 }
 
 .category-square {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     margin-top: 32px;
     background-color: #325935;
     border-radius: 15%;
@@ -493,6 +493,7 @@ body {
 
 .category-h1 {
     margin-left: 32px;
+    margin-top: 32px;
 }
 
 .category-hero-text {
@@ -528,10 +529,8 @@ body {
     background-image: url("../images/lov-regler-board.jpg");
 }
 
-.placeholder-img {
-    height: 250px;
-    width: 100%;
-    background-color: #97BF7A;
+@media (min-width: 768px) {
+    
 }
 
 /*om os*/
