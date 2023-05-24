@@ -8,6 +8,156 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+
+  <header class="index-header">
+      <div class="index-header-contain">
+          <p class="logo" id="index-logo">GREENWHEELS</p>
+          <nav>
+              <div class="bm-box"></div>
+          </nav>
+      </div>
+
+      <div class="ny-hero-contain">
+        <div class="ny-img-slider">
+
+          <div class="ny-hero">
+              <h2 class="ny-hero-h2">Nyhed</h2>
+              <p class="ny-hero-p">Mange flere ladepunkter 2023</p>
+          </div>
+        </div>
+      </div>
+
+  </header>
+
+
+
+<div class="ny-dropdown">
+  <h3>De 5 seneste nyheder</h3>
+
+<div class="ny-dropdown-single">
+  <button type="button" class="ny-collapsible">Nyhed 1</button>
+    <div class="ny-content">
+      <p>tester tekst</p>
+    </div>
+</div>
+
+<div class="ny-dropdown-single">
+  <button type="button" class="ny-collapsible">Nyhed 2</button>
+    <div class="ny-content">
+      <p>tester tekst</p>
+    </div>
+</div>
+
+<div class="ny-dropdown-single">
+  <button type="button" class="ny-collapsible">Nyhed 3</button>
+    <div class="ny-content">
+      <p>tester tekst</p>
+    </div>
+</div>
+
+<div class="ny-dropdown-single">
+  <button type="button" class="ny-collapsible">Nyhed 4</button>
+    <div class="ny-content">
+      <p>tester tekst</p>
+    </div>
+</div>
+
+<div class="ny-dropdown-single">
+  <button type="button" class="ny-collapsible">Nyhed 5</button>
+    <div class="ny-content">
+      <p>tester tekst</p>
+    </div>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript">
+let coll = document.getElementsByClassName("ny-collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<div class="ny-ark">
+  <h3>Nyheds arkiv</h3>
+  <p>Alle vores nyheder, som ikke længere er fremhævet her på siden, finder du inde i nyhedsarkivet </p>
+        <div class="ny-btn-arkiv">
+          <input type="submit" value="Arkiv">
+        </div>
+</div>
+
+  <div class="ny-sub">
+    <h3>Tilmed nyhedsbrev</h3>
+      <form action="" class="ny-sub-form">
+        <input type="text" placeholder="Navn">
+        <input type="text" placeholder="Mail">
+        <div class="checkbox-container">
+          <label>
+              <input type="checkbox" id="" > Accepter 'GreenWheels' betingelser
+          </label>
+          <label>
+              <input type="checkbox" id=""> Ja tak, jeg ønsker at modtage nyheder & reklamer
+          </label>
+        </div>
+          <div class="ny-btn-tilmed">
+            <input type="submit" value="Tilmed">
+          </div>
+      </form>
+  </div>
+
+
+
+
+
+
+
+
+  <footer>
+      <div class="footer-general">
+          <div class="footer-container-one">
+              <div class="footer-logo">GREENWHEELS</div>
+              <p class="footer-headline">Nyheder</p>
+              <p class="footer-text">Nyt om elbiler <br> Nyhedsbrev</p>
+              <p class="footer-headline">Kort</p>
+              <p class="footer-text">Ladestationer <br> Abonnement</p>
+              <p class="footer-headline">Om os</p>
+              <p class="footer-text">Hvem er vi <br> Kontakt <br> FAQ </p>
+          </div>
+          <div class="footer-container-two">
+              <p class="footer-headline"><br>Kategorier</p>
+              <p class="footer-text">Alle kategorier <br> Batteri <br> Modeller <br> Omkostninger
+              <br> Opladning <br> Priser <br> Rækkevidde <br> Strømkilde</p>
+              <div>
+                  <div class="icon-linkedin"></div>
+                  <div class="icon-instagram"></div>
+                  <div class="icon-facebook"></div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-kontakt">
+          <div class="footer-kontakt-text">
+              <p class="footer-headline footer-kontakt-text">Kontakt os</p>
+              <p class="footer-text">+45 12 34 56 78 <br> greenwheels@contact.com <br> Odense - Danmark</p>
+              <p class="footer-text">CVR-nummer 12345678 <br> EAN-nummer 0000123456789</p>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <p class="footer-copyright-text">copyright 2023 UCL Erhvervsakademi & Proffesionshøjskole</p>
+      </div>
+      <!--greenwheels footer + kontakt + copyright-->
+  </footer>
 </body>
 </html>

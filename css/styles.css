@@ -291,6 +291,96 @@ body {
 
 /*nyheder*/
 
+
+.ny-hero-contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ny-img-slider{
+  background-color: grey;
+  min-height: 500px;
+  display: flex;
+ flex-direction: column;
+ flex: 1;
+}
+.ny-hero{
+margin-top: auto;
+background: rgba(0, 0, 0, .3);
+padding: 16px 32px;
+}
+
+.ny-hero-h2 {
+    color: #F2F2F2;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.ny-hero-p {
+    color: #F2F2F2;
+    font-size: 24px;
+}
+
+.ny-sub, .ny-ark{
+  padding: 32px 32px;
+}
+.ny-sub h3, .ny-ark h3, .ny-dropdown h3{
+padding: 32px 0px;
+}
+.ny-btn-tilmed, .ny-btn-arkiv{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.ny-dropdown{
+  padding: 0px 32px;
+}
+
+.ny-dropdown-single{
+  padding: 2px 0px;
+}
+
+.ny-collapsible {
+  background-color: #5E8C5D;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+/* hover farve*/
+.active, .ny-collapsible:hover {
+  background-color: green;
+}
+
+/* grafik på indhld */
+.ny-content {
+  padding: 16px 16px;
+  display: none;
+  overflow: hidden;
+  background-color: green;
+  color: white;
+}
+
+.ny-collapsible:after {
+  content: "\02795"; /* + tegn */
+ font-size: 16px;
+ color: white;
+ float: right;
+ margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* - tegn */
+}
+
+
 /*kategori*/
 
 /*om os*/
@@ -320,7 +410,7 @@ input[type=text], select, textarea {
     height: 64px;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 .checkbox-container label {
