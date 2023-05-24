@@ -133,7 +133,7 @@ body {
 
 /*header i index*/
 .index-header {
-    background-image: url('/indhold/img/closeup-gylden-mark.jpg');
+    background-image: url('/images/closeup-gylden-mark.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -272,8 +272,10 @@ body {
 /*responsov kategori fakta box */
 @media (min-width: 960px) {
     .index-kategori-section img {
-        max-width: 50%;
-        background-size: cover;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        object-position: right;
     }
     .index-kategori-section-flex {
         display: flex;
