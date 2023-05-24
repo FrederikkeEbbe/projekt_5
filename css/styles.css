@@ -148,7 +148,7 @@ body {
     font-size: 30px;
 }
 
-.bm-box{
+.bm-box {
     width: 32px;
     height: 32px;
     background-color: #F2F2F2;
@@ -189,7 +189,7 @@ body {
     border-radius: 50px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
+}
 
 .btn-index:hover {
     opacity: .95;
@@ -272,8 +272,8 @@ body {
 }
 
 .index-kategori-fakta p {
-   font-size: 22px;
-   font-style: italic;
+    font-size: 22px;
+    font-style: italic;
 }
 
 /*responsov kategori fakta box */
@@ -284,6 +284,7 @@ body {
         object-fit: cover;
         object-position: right;
     }
+
     .index-kategori-section-flex {
         display: flex;
         flex-direction: row;
@@ -319,17 +320,18 @@ body {
     flex-wrap: wrap;
 }
 
-.ny-img-slider{
-  background-color: grey;
-  min-height: 500px;
-  display: flex;
- flex-direction: column;
- flex: 1;
+.ny-img-slider {
+    background-color: grey;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
-.ny-hero{
-margin-top: auto;
-background: rgba(0, 0, 0, .3);
-padding: 16px 32px;
+
+.ny-hero {
+    margin-top: auto;
+    background: rgba(0, 0, 0, .3);
+    padding: 16px 32px;
 }
 
 .ny-hero-h2 {
@@ -343,62 +345,71 @@ padding: 16px 32px;
     font-size: 24px;
 }
 
-.ny-sub, .ny-ark{
-  padding: 32px 32px;
-}
-.ny-sub h3, .ny-ark h3, .ny-dropdown h3{
-padding: 32px 0px;
-}
-.ny-btn-tilmed, .ny-btn-arkiv{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 32px;
+.ny-sub,
+.ny-ark {
+    padding: 32px 32px;
 }
 
-.ny-dropdown{
-  padding: 0px 32px;
+.ny-sub h3,
+.ny-ark h3,
+.ny-dropdown h3 {
+    padding: 32px 0px;
 }
 
-.ny-dropdown-single{
-  padding: 2px 0px;
+.ny-btn-tilmed,
+.ny-btn-arkiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.ny-dropdown {
+    padding: 0px 32px;
+}
+
+.ny-dropdown-single {
+    padding: 2px 0px;
 }
 
 .ny-collapsible {
-  background-color: #5E8C5D;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
+    background-color: #5E8C5D;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
 }
 
 /* hover farve*/
-.active, .ny-collapsible:hover {
-  background-color: green;
+.active,
+.ny-collapsible:hover {
+    background-color: green;
 }
 
 /* grafik på indhld */
 .ny-content {
-  padding: 16px 16px;
-  display: none;
-  overflow: hidden;
-  background-color: green;
-  color: white;
+    padding: 16px 16px;
+    display: none;
+    overflow: hidden;
+    background-color: green;
+    color: white;
 }
 
 .ny-collapsible:after {
-  content: "\02795"; /* + tegn */
- font-size: 16px;
- color: white;
- float: right;
- margin-left: 5px;
+    content: "\02795";
+    /* + tegn */
+    font-size: 16px;
+    color: white;
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* - tegn */
+    content: "\2796";
+    /* - tegn */
 }
 
 
@@ -408,13 +419,13 @@ padding: 32px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 32px;
 }
+
 .category-square {
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     margin-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
     background-color: #325935;
     border-radius: 15%;
     display: flex;
@@ -425,7 +436,7 @@ padding: 32px 0px;
 
 .category-square-text {
     font-size: 16px;
-    color:#F2F2F2;
+    color: #F2F2F2;
     font-style: italic;
     text-align: center;
     padding-bottom: 28px;
@@ -437,22 +448,71 @@ padding: 32px 0px;
 }
 
 .fa-solid {
-color: #ffffff;
-margin:auto;
-padding-top: 28px;
-}
-
-.category-info {
-    padding: 32px;
+    color: #ffffff;
+    margin: auto;
+    padding-top: 28px;
 }
 
 .category-info-text {
     padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .category-kilde {
     font-size: 10px;
     padding-top: 5px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+}
+
+.category-header {
+        background-image: url("../images/wind-farm-mark.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 270px;
+}
+
+.category-hero-text-black {
+    color: #F2F2F2;
+    font-weight: 900;
+    font-size: 26px;
+    margin-left: 32px;
+}
+
+.category-logo {
+    font-size: 30px;
+}
+
+.category-h1 {
+    margin-left: 32px;
+}
+
+.category-hero-text {
+    color: #F2F2F2;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    margin-left: 32px;
+}
+
+.category-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+}
+.category-omkostninger-img {
+    background-image: url("../images/grøn-mark-hvid-himmel.jpg");
+}
+
+.category-opladning-img {
 }
 
 .placeholder-img {
@@ -460,20 +520,56 @@ padding-top: 28px;
     width: 100%;
     background-color: #97BF7A;
 }
+
 /*om os*/
 /*om os*/
+
+#logo-white {
+    color: #F2F2F2;
+}
+
 .hero-om-os {
-    padding: 32px;
+    height: 300px;
+    background-image: url('/images/double-opladning.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: red dashed 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #F2F2F2;
+}
+
+.logo-bm-om-os {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: red dashed 1px;
+}
+
+.hero-txt-om-os {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 20px;
+    border: red dashed 1px;
+    height: 100px;
+    padding: 0px 32px 32px 0;
+
 }
 
 /*kontakt*/
 .kontaktformular {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px 20px;
     border: 1px solid #C0C0C0;
@@ -504,16 +600,16 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
- background-color: #325935;
- color: #F2F2F2;
- border-radius: 20px;
- cursor: pointer;
- height: 48px;
- font-size: 18px;
- margin: 24px 0px;
- width: 60%;
- max-width: 350px;
- align-self: center;
+    background-color: #325935;
+    color: #F2F2F2;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 48px;
+    font-size: 18px;
+    margin: 24px 0px;
+    width: 60%;
+    max-width: 350px;
+    align-self: center;
 
 }
 
