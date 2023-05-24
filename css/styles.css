@@ -432,8 +432,8 @@ a {
 }
 
 .category-square {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     margin-top: 32px;
     background-color: #325935;
     border-radius: 15%;
@@ -501,6 +501,7 @@ a {
 
 .category-h1 {
     margin-left: 32px;
+    margin-top: 32px;
 }
 
 .category-hero-text {
@@ -538,11 +539,7 @@ a {
     background-image: url("../images/lov-regler-board.jpg");
 }
 
-.placeholder-img {
-    height: 250px;
-    width: 100%;
-    background-color: #97BF7A;
-}
+@media (min-width: 768px) {}
 
 /*om os*/
 /*om os*/
@@ -556,7 +553,6 @@ a {
     background-image: url('/images/double-opladning.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border: red dashed 1px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -569,7 +565,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: red dashed 1px;
 }
 
 .hero-txt-om-os {
@@ -577,10 +572,13 @@ a {
     flex-direction: column;
     align-self: flex-end;
     gap: 20px;
-    border: red dashed 1px;
     height: 100px;
     padding: 0px 32px 32px 0;
 
+}
+
+.om-os {
+    padding: 16px 32px 0px 32px;
 }
 
 /*kontakt*/
