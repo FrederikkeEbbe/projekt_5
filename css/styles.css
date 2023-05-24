@@ -501,6 +501,18 @@ padding-top: 28px;
 }
 
 .category-opladning-img {
+    background-image: url("../images/car-charging.jpg");
+}
+
+.category-priser-img {
+    background-image: url("../images/dame-langs-elbil.jpg");
+}
+.category-strømkilde-img {
+    background-image: url("../images/charger-for-cars.jpg");
+}
+
+.category-love-img {
+    background-image: url("../images/lov-regler-board.jpg");
 }
 
 .placeholder-img {
