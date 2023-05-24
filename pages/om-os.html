@@ -26,20 +26,20 @@
 </header>
     </div>
 <section class="om-os">
-    <h1>Bag om GreenWheels</h1>
-    <button class="om-collapsible">Vision</button>
+    <h3>Bag om GreenWheels</h3><br>
+    <button type="button" class="om-collapsible">Vision</button>
     <div class="om-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="om-collapsible">Mission</button>
+    <button type="button" class="om-collapsible">Mission</button>
     <div class="om-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="om-collapsible">Værdier & Mål</button>
+    <button type="button" class="om-collapsible">Værdier & Mål</button>
     <div class="om-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <button class="om-collapsible">CEO</button>
+    <button type="button" class="om-collapsible">CEO</button>
     <div class="om-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
@@ -47,24 +47,24 @@
     <script>
         var coll = document.getElementsByClassName("om-collapsible");
         var i;
-        
+
         for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
+            if (content.style.display === "block") {
+            content.style.display = "none";
             } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
+            content.style.display = "block";
+            }
+        });
         }
-        </script>
+    </script>
 
 </section>
-<h2>Interesseret i mere?</h2>
 <section class="kontakt-os">
-    <h3>Skriv til os</h3>
+    <h3>Interesseret i mere?</h3><br>
+    <h4>Skriv til os</h4>
     <form action="" class="kontaktformular">
         <input type="text" placeholder="Navn">
         <input type="text" placeholder="Mail">
@@ -79,6 +79,7 @@
         </div>
         <input type="submit" value="Send">
     </form>
+</section>
     <footer>
         <div class="footer-general">
             <div class="footer-container-one">
@@ -111,8 +112,6 @@
         <div class="footer-copyright">
             <p class="footer-copyright-text">copyright 2023 UCL Erhvervsakademi & Proffesionshøjskole</p>
         </div>
-        <!--greenwheels footer + kontakt + copyright-->
     </footer>
-</section>
 </body>
 </html>

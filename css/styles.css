@@ -2,6 +2,8 @@
 * {
     margin: 0;
     border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -201,17 +203,16 @@ body {
 
 
 /*cards slide*/
-
 .index-card-sec {
     padding: 16px 32px;
 }
 
 /*note note*/
 .card-index-et {
+    max-width: 350px;
     margin: 24px 0px;
     padding: 16px 24px;
     background-color: #F2F2F2;
-    max-width: 302px;
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -464,8 +465,8 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 
 .category-square {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     margin-top: 32px;
     background-color: #325935;
     border-radius: 15%;
@@ -533,6 +534,7 @@ background-image: url(../images/oplader-mand-gul.jpg);
 
 .category-h1 {
     margin-left: 32px;
+    margin-top: 32px;
 }
 
 .category-hero-text {
@@ -567,14 +569,48 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 
 .category-love-img {
-    background-image: url("../images/lov-regler-board.jpg");
+    background-image: url("../images/solsystem-møller.jpg");
 }
 
-.placeholder-img {
-    height: 250px;
-    width: 100%;
-    background-color: #97BF7A;
+@media (min-width: 768px) {
+
+    .category-img {
+        margin-top: 50px;
+    }
+
+    .category-flex-container {
+        display: flex;
+    }
+
+    .category-left-h2andtext {
+        order: 1;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img-right {
+        width:50%;
+        order: 2;
+    }
+
+    .category-right-h2andtext {
+        order: 2;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img-left {
+        width:50%;
+        order: 1;
+    }
+
+    .category-love-img {
+        margin-bottom: 50px;
+    }
+
+
 }
+@media (min-width: 768px) {}
 
 /*om os*/
 /*om os*/
@@ -588,7 +624,6 @@ background-image: url(../images/oplader-mand-gul.jpg);
     background-image: url('/images/double-opladning.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border: red dashed 1px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -601,7 +636,6 @@ background-image: url(../images/oplader-mand-gul.jpg);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: red dashed 1px;
 }
 
 .hero-txt-om-os {
@@ -609,10 +643,13 @@ background-image: url(../images/oplader-mand-gul.jpg);
     flex-direction: column;
     align-self: flex-end;
     gap: 20px;
-    border: red dashed 1px;
-    height: 100px;
-    padding: 0px 32px 32px 0;
+    height: 150px;
+    padding: 32px 32px 32px 32px;
 
+}
+
+.om-os {
+    padding: 16px 32px 0px 32px;
 }
 
 /*kontakt*/
