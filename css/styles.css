@@ -538,11 +538,46 @@ a {
 }
 
 .category-love-img {
-    background-image: url("../images/lov-regler-board.jpg");
+    background-image: url("../images/solsystem-møller.jpg");
 }
 
 @media (min-width: 768px) {
-    
+
+    .category-img {
+        margin-top: 50px;
+    }
+
+    .category-flex-container {
+        display: flex;
+    }
+
+    .category-left-h2andtext {
+        order: 1;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img-right {
+        width:50%;
+        order: 2;
+    }
+
+    .category-right-h2andtext {
+        order: 2;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img-left {
+        width:50%;
+        order: 1;
+    }
+
+    .category-love-img {
+        margin-bottom: 50px;
+    }
+
+
 }
 
 /*om os*/
