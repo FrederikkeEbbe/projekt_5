@@ -461,7 +461,9 @@ background-image: url(../images/oplader-mand-gul.jpg);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
 }
 
 .category-square {
