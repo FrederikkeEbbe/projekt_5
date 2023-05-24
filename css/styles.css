@@ -332,6 +332,9 @@ a {
     flex-direction: column;
     flex: 1;
 }
+.ny-img-slider {
+background-image: url(../images/oplader-mand-gul.jpg);
+}
 
 .ny-hero {
     margin-top: auto;
@@ -349,6 +352,36 @@ a {
     color: #F2F2F2;
     font-size: 24px;
 }
+.ny-box img{
+    height: 200px;
+    width: 100%;
+}
+.ny-box-img{
+    padding: 32px 0px;
+}
+.ny-container{
+    padding: 0px 32px;
+}
+.ny-box{
+    background-color: lightgrey;
+    padding: 0px 32px;
+}
+.ny-box-btn{
+    background-color: #214029;
+    color: #F2F2F2;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ny-box-btn:hover {
+    opacity: .95;
+}
+.ny-box-btn:active {
+    background-color: #325935;
+}
+
 
 .ny-sub,
 .ny-ark {
@@ -402,8 +435,8 @@ a {
     padding: 16px 16px;
     display: none;
     overflow: hidden;
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .ny-collapsible:after,
@@ -609,8 +642,8 @@ a {
     flex-direction: column;
     align-self: flex-end;
     gap: 20px;
-    height: 100px;
-    padding: 0px 32px 32px 0;
+    height: 150px;
+    padding: 32px 32px 32px 32px;
 
 }
 
