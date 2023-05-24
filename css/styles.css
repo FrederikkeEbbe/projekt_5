@@ -2,7 +2,7 @@
 * {
     margin: 0;
     border: 0;
-    padding 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -207,6 +207,7 @@ body {
     padding: 16px 32px;
 }
 
+/*note note*/
 .card-index-et {
     margin: 24px 0px;
     padding: 16px 24px;
@@ -258,7 +259,8 @@ body {
     padding: 16px 32px;
 }
 
-.index-kategori-section-contain > h2, a{
+.index-kategori-section-contain>h2,
+a {
     margin: 32px 0px;
 }
 
@@ -376,7 +378,8 @@ body {
     padding: 2px 0px;
 }
 
-.ny-collapsible {
+.ny-collapsible,
+.om-collapsible {
     background-color: #5E8C5D;
     color: white;
     cursor: pointer;
@@ -390,12 +393,14 @@ body {
 
 /* hover farve*/
 .active,
-.ny-collapsible:hover {
+.ny-collapsible:hover,
+.om-collapsible:hover {
     background-color: green;
 }
 
 /* grafik på indhld */
-.ny-content {
+.ny-content,
+.om-content {
     padding: 16px 16px;
     display: none;
     overflow: hidden;
@@ -403,7 +408,8 @@ body {
     color: white;
 }
 
-.ny-collapsible:after {
+.ny-collapsible:after,
+.om-collapsible:after {
     content: "\02795";
     /* + tegn */
     font-size: 16px;
@@ -473,15 +479,15 @@ body {
 }
 
 .category-header {
-        background-image: url("../images/wind-farm-mark.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        min-height: 450px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 270px;
+    background-image: url("../images/wind-farm-mark.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 270px;
 }
 
 .category-hero-text-black {
@@ -513,6 +519,7 @@ body {
     background-size: cover;
     min-height: 450px;
 }
+
 .category-omkostninger-img {
     background-image: url("../images/grøn-mark-hvid-himmel.jpg");
 }
@@ -524,6 +531,7 @@ body {
 .category-priser-img {
     background-image: url("../images/dame-langs-elbil.jpg");
 }
+
 .category-strømkilde-img {
     background-image: url("../images/charger-for-cars.jpg");
 }
