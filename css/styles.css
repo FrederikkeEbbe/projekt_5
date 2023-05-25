@@ -572,8 +572,29 @@ a {
     margin: 0 auto;
     position: absolute;
     text-align: center;
-    left: 35%;
+    left: 25%;
     color: #214029;
+    display: none;
+}
+
+#reg-nord {
+    top: 60%;
+}
+
+#reg-midt {
+    top: 63%;
+}
+
+#reg-zea {
+    top: 72%;
+}
+
+#reg-hoved {
+    top: 69%;
+}
+
+#reg-syd {
+    top: 66%;
 }
 
 svg path{
@@ -584,6 +605,15 @@ svg path{
 
 svg path:hover{
     fill: #325935;
+}
+
+svg path::after {
+    content: '';
+    fill: #325935;
+}
+
+.kort-clicked {
+    fill: #325935
 }
 
 @media (min-width: 750px) {
@@ -618,6 +648,71 @@ svg path:hover{
         width: 80%;
         align-self: center;
         padding-left: 48px;
+    }  
+}
+
+.kort-links {
+    padding: 32px;
+}
+
+.kort-links h2 {
+    padding-bottom: 16px;
+}
+
+.kort-links h3 {
+    padding-bottom: 8px;
+}
+
+.kort-link-card {
+    min-width: 350px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    margin-bottom: 16px;
+}
+
+.kort-link-card a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.kort-link-card a:hover {
+    text-decoration: underline 2px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.kort-img-contain {
+    background-color: #214029;
+    width: 350px;
+}
+
+.kort-link-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width:750px) {
+    .kort-link-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .kort-link-contain {
+        width: 200%;
+    }
+
+    .kort-link-img {
+        margin: 38px 016px 16px;
+        width: 50%;
     }  
 }
 
