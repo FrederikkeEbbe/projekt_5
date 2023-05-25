@@ -970,6 +970,7 @@ background-color: black;
     background-image: url("../images/oplader-mand-gul.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     max-height: 450px;
     width: 100%;
     justify-content: center;
@@ -1020,7 +1021,6 @@ background-color: black;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     width: 245px;  
 }
 
