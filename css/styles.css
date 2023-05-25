@@ -719,6 +719,42 @@ svg path::after {
 
 /*nyheder*/
 
+.ny-header{
+    min-height: 200px;
+}
+
+.ny-menu-linje {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.ny-menu-linje li {
+    list-style-type: none;
+}
+.ny-menu-linje a{
+   color: black;
+}
+
+.ny-menu-linje li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0px 15px 10px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+.ny-menu-linje li a:hover {
+    box-shadow: 0 -3px 0px green inset;
+}
+
+
+
+
 
 .ny-hero-contain {
     display: flex;
@@ -747,6 +783,7 @@ background-image: url(../images/oplader-mand-gul.jpg);
     color: #F2F2F2;
     font-weight: 900;
     font-style: italic;
+    font-size: 40px;
 }
 
 .ny-hero-p {
@@ -755,6 +792,7 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 .ny-box img{
    max-width: 100%;
+   border-radius: 4px;
 }
 .ny-box-img{
     padding: 32px 0px;
@@ -762,12 +800,7 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 .ny-container{
     padding: 0px 32px;
-    max-width: 1000px;
-}
-.ny-box{
-    background-color: lightgrey;
-    padding: 0px 32px;
-    margin: 32px 0px;
+    width: auto;
 }
 .ny-container h2{  
 padding-top: 24px;
@@ -778,35 +811,55 @@ padding-top: 24px;
 .ny-box h6{
     padding-bottom: 16px;
 }
+.ny-dropdown-img{
+    display: none;
+}
+.ny-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ny-box{
+    background-color: #F2F2F2;
+    min-height: 500px;
+    width: auto;
+    margin-top: 32px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 #more{
     display: none;
 }
 #myBtn{
     background-color: #214029;
     color: #F2F2F2;
-    padding: 10px 40px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 50%;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
 }
 .ny-box-btn{
     background-color: #214029;
     color: #F2F2F2;
     padding: 10px 40px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     margin: 24px 0px;
+    max-width: 100px;
 }
-.ny-box-btn a{
-text-decoration: none;
-color: white;
-}
-.ny-box-btn:hover {
+
+.ny-box-btn:hover, #myBtn:hover{
     opacity: .95;
 }
 .ny-box-btn:active {
@@ -835,12 +888,12 @@ color: white;
     padding: 0px 32px;
 }
 
-.ny-dropdown-single, .om-dropdown-single {
-    padding: 2px 0px;
+.ny-dropdown-single, .om-dropdown-single, .faq-dropdown-single {
+    padding: 6px 0px;
 }
 
 .ny-collapsible,
-.om-collapsible {
+.om-collapsible, .faq-collapsible {
     background-color: #5E8C5D;
     color: white;
     cursor: pointer;
@@ -850,27 +903,32 @@ color: white;
     text-align: left;
     outline: none;
     font-size: 16px;
+    font-style: italic;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* hover farve*/
 .active,
 .ny-collapsible:hover,
-.om-collapsible:hover {
+.om-collapsible:hover,
+.faq-collapsible:hover {
     background-color: green;
 }
 
 /* grafik på indhld */
 .ny-content,
-.om-content {
+.om-content,
+.faq-content {
     padding: 16px 16px;
     display: none;
     overflow: hidden;
-    background-color: white;
+    background-color: #f2f2f2;
     color: black;
 }
 
 .ny-collapsible:after,
-.om-collapsible:after {
+.om-collapsible:after,
+.faq-collapsible:after {
     content: "\02795";
     /* + tegn */
     font-size: 16px;
@@ -884,16 +942,53 @@ color: white;
     /* - tegn */
 }
 
-@media (min-width: 768px){
-.ny-container{
-background-color: black;
-}
-}
+
 
 @media (min-width: 960px){
-    .ny-container{
-        background-color: red;
+.ny-box{
+    width: 670px;
+    margin: 40px 0px;
 }
+.ny-box-container{
+    justify-content: space-between;
+}
+.ny-dropdown-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 160px;
+    background-color: #f2f2f2;
+}
+.ny-dropdown-img{
+    display: block;
+}
+.ny-dropdown-img img{
+    height: 500px;
+    width: auto;
+}
+.ny-dropdown-container{
+    width: 350px;
+    margin-right: 100px;
+}
+.ny-bot-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 160px 0px;
+    padding: 0px 32px;
+}
+.ny-ark{
+    background-color: #F2F2F2;
+}
+.ny-sub{
+    margin-left: 88px;
+}
+.ny-sub h2{
+    font-weight: lighter;
+}
+.ny-ark h2{
+    margin-top: 20px;
+}
+
 }
 
 /*kategori*/
@@ -1169,8 +1264,11 @@ background-color: black;
 
 }
 
-.om-os {
+.om-os, .faq-container {
     padding: 16px 32px 0px 32px;
+    max-width: 800px;
+    align-self: center;
+    margin: auto;
 }
 
 /*kontakt*/
@@ -1237,16 +1335,25 @@ input[type=submit] {
 
 section.kontakt-os {
     padding: 32px;
+    max-width: 800px;
+    margin: auto;
 }
 
 section.information {
     background-color: #5E8C5D;
     color: #F2F2F2;
-    padding: 32px;
+    margin: auto;
 }
+
 
 section.faq {
     display: flex;
     justify-content: center;
+    padding: 32px;
+}
+
+.info-txt {
+    max-width: 800px;
+    margin: auto;
     padding: 32px;
 }
