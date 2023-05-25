@@ -572,29 +572,29 @@ a {
     margin: 0 auto;
     position: absolute;
     text-align: center;
-    left: 25%;
+    left: 45%;
     color: #214029;
     display: none;
 }
 
 #reg-nord {
-    top: 60%;
+    top: 66%;
 }
 
 #reg-midt {
-    top: 63%;
-}
-
-#reg-zea {
-    top: 72%;
-}
-
-#reg-hoved {
     top: 69%;
 }
 
+#reg-zea {
+    top: 78%;
+}
+
+#reg-hoved {
+    top: 75%;
+}
+
 #reg-syd {
-    top: 66%;
+    top: 72%;
 }
 
 svg path{
@@ -616,6 +616,10 @@ svg path::after {
     fill: #325935
 }
 
+.kort-flex h2 {
+    margin-bottom: 50px;
+}
+
 @media (min-width: 750px) {
     .kort-flex{
         display: flex;
@@ -632,6 +636,10 @@ svg path::after {
         align-self: center;
         padding-left: 40px;
     }  
+
+    .hide-txt-kort {
+        left: 35%;
+    }
 }
 
 @media (min-width: 850px) {
@@ -649,6 +657,10 @@ svg path::after {
         align-self: center;
         padding-left: 48px;
     }  
+
+    .hide-txt-kort {
+        left: 25%;
+    }
 }
 
 .kort-links {
