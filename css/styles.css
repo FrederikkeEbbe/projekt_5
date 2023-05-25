@@ -554,12 +554,13 @@ a {
     color: #214029;
 }
 
-.path-syd, .path-midt, .path-nord, .path-hoved, .path-sjælland {
-   fill: #5E8C5D;
+svg path{
+    cursor: pointer;
+    fill: #5E8C5D;
    stroke: #97BF7A;
 }
 
-.path-syd:hover, .path-midt:hover, .path-nord:hover, .path-hoved:hover, .path-sjælland:hover {
+svg path:hover{
     fill: #325935;
 }
 
