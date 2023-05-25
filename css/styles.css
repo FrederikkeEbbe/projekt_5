@@ -781,6 +781,13 @@ background-image: url(../images/oplader-mand-gul.jpg);
     background-image: url("../images/solsystem-møller.jpg");
 }
 
+#omkostninger-text {
+    color: #F2F2F2;
+    display: flex;
+    align-items: end;
+    padding: 32px;
+}
+
 @media (min-width: 768px) {
 
     .category-img {
