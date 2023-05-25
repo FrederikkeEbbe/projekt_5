@@ -61,10 +61,49 @@
         <p>CVR-nummer: 12345678</p>
         <p>EAN-nummer: 0000123456789</p>
     </section>
-    <section class="faq">
-        <h2>Ofte stillede spørgsmål</h2>
-        <!--INDSÆT "COLLAPSIBLE"-->
-    </section>
+    <section class="faq-container">
+        <h3>Ofte stillede spørgsmål</h3><br>
+        <div class="faq-dropdown-single">
+            <button type="button" class="faq-collapsible">SPG 1</button>
+            <div class="faq-content">
+                <p>GreenWheels' vision er at blive den førende og mest konkurrencedygtige informationsplatform vedrørende elbiler på markedet, med henblik på at skabe værdi for virksomhedens interessenter, såvel som for forbrugeren.</p>
+            </div>
+        </div>
+        <div class="faq-dropdown-single">
+            <button type="button" class="faq-collapsible">SPG 2</button>
+            <div class="om-content">
+                <p>GreenWheels' mission er at overskueliggøre og forsyne danskerne med relevant information vedrørende elbiler og den grønne omstilling gennem en digital løsning.</p>
+            </div>
+        </div>
+        <div class="faq-dropdown-single">
+            <button type="button" class="faq-collapsible">SPG 3</button>
+            <div class="om-content">
+                <p>GreenWheels' formål er at bidrage til den grønne omstilling, et bedre klima og dermed en lysere fremtid.</p>
+            </div>
+        </div>
+        <div class="faq-dropdown-single">
+            <button type="button" class="faq-collapsible">SPG 4</button>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    
+        <script>
+            var coll = document.getElementsByClassName("faq-collapsible");
+            var i;
+    
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+        </script>
     <footer>
         <div class="footer-general">
             <div class="footer-container-one">
