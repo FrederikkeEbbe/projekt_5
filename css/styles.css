@@ -503,16 +503,47 @@ a {
 
 
 /*Kort over ladestandere*/
-.kort-section {
-    padding: 32px;
-    background-color: rgba(237, 237, 237, 0.97)
-    
+
+.kort-contain {
+    padding-bottom: 40px;
+    width: 100%;
 }
 
-@media (min-width: 960px) {
-    .kort-section {
-        padding: 40px 32px;
-    }
+.kort-select-contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.kort-select {
+    border: solid #5E8C5D;
+}
+
+.kort-btn {
+    display: block;
+    align-self: center;
+    background-color: #214029;
+    color: #F2F2F2;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+}
+
+.kort-btn:hover {
+    opacity: .95;
+}
+
+.kort-btn:active {
+    background-color: #325935;
+}
+
+.kort-section {
+    background-color: rgba(237, 237, 237, 0.97);
+    padding: 32px;
 }
 
 .hide-txt-kort {
@@ -531,6 +562,42 @@ a {
 .path-syd:hover, .path-midt:hover, .path-nord:hover, .path-hoved:hover, .path-sjælland:hover {
     fill: #325935;
 }
+
+@media (min-width: 750px) {
+    .kort-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kort-contain {
+        width: 140%;
+        padding-bottom: 31px;
+    }
+
+    .kort-select-contain {
+        width: 60%;
+        align-self: center;
+        padding-left: 40px;
+    }  
+}
+
+@media (min-width: 850px) {
+    .kort-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kort-contain {
+        width: 120%;
+    }
+
+    .kort-select-contain {
+        width: 80%;
+        align-self: center;
+        padding-left: 48px;
+    }  
+}
+
 
 /*nyheder*/
 
