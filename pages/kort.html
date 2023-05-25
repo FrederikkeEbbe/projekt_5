@@ -49,7 +49,7 @@
       <div class="sjælland-txt hide-txt-kort">
         <h2>Region Sjælland</h2>
       </div>
-
+    
       <div class="nordjylland-txt hide-txt-kort">
         <h2>Region Nordjylland</h2>
       </div>
@@ -76,15 +76,27 @@
     </div>
     <div>
       <h2>Filtrer</h2>
-      <select name="region" id="kort-filter-reg">
-        <option value="val-syd">Region Syddanmark</option>
-        <option value="val-zealand">Region Sjælland</option>
-        <option value="val-nord">Region Nordjylland</option>
-        <option value="val-midt">Region Midtjylland</option>
-        <option value="val-hoved">Region Hovedstaden</option>
+      <select class="kort-select" name="region" id="kort-filter-reg">
+        <option value="0">Vælg Region</option>
+        <option value="1">Region Syddanmark</option>
+        <option value="2">Region Sjælland</option>
+        <option value="3">Region Nordjylland</option>
+        <option value="4">Region Midtjylland</option>
+        <option value="5">Region Hovedstaden</option>
       </select>
-      <select name="udbydere" id="kort-filter-stand">
-        <option value="val"></option>
+      
+      <select class="kort-select" name="udbydere" id="kort-filter-stand">
+        <option value="0">Vælg udbyder</option>
+        <option value="1">Clever</option>
+        <option value="2">E-On</option>
+        <option value="3">Spirii</option>
+        <option value="4">Tesla</option>
+        <option value="5">EVDK</option>
+        <option value="6">Ionity</option>
+        <option value="7">FDM</option>
+        <option value="8">Zaap mobility</option>
+        <option value="9">Powerfuel</option>
+        <option value="10">OK</option>
       </select>
     </div>
   </section>
