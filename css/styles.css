@@ -123,6 +123,19 @@ footer {
     padding: 20px;
 }
 
+@media (min-width: 768px) {
+    .footer-general {
+        width: 50%;
+    }
+    .footer-kontakt {
+        width: 50%;
+        padding-top: 67px;
+    }
+    .footer-container-one {
+        margin-top: -6px;
+    }
+}
+
 /*index*/
 /*skal rykkes op*/
 html {
