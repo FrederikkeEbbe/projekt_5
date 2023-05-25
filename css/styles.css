@@ -402,10 +402,6 @@ nav input:checked ~ .hbmenu:after {
         height: 540px;
         margin: 24px 24px 24px 0;
       }
-
-    .card-index-to {
-        width: 400px;
-    }
   }
 
   @media (min-width: 1100px) {
@@ -489,8 +485,43 @@ a {
     border-radius: 4px 4px 0px 0px;
 }
 
+@media (min-width: 600px) {
+    .card-index-to {
+        width: 410px;
+        height: 710px;
+        margin: 24px 24px 24px 0;
+      }
+  }
+
+  @media (min-width: 1100px) {
+    .card-index-to {
+        width: 440px;
+        height: 720px;
+        margin: 24px 32px 24px 0;
+      }
+  }
 
 
+/*Kort over ladestandere*/
+.kort-section {
+    padding: 32px;
+}
+.hide-txt-kort {
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    color: #214029;
+}
+
+.path-syd, .path-midt, .path-nord, .path-hoved, .path-sjælland {
+   fill: #5E8C5D;
+   stroke: #97BF7A;
+}
+
+.path-syd:hover, .path-midt:hover, .path-nord:hover, .path-hoved:hover, .path-sjælland:hover {
+    fill: #325935;
+}
 
 /*nyheder*/
 
@@ -830,6 +861,15 @@ background-image: url(../images/oplader-mand-gul.jpg);
 }
 
 /*kontakt*/
+
+.hero-kontakt-os {
+    height: 64px;
+    display: flex;
+    background-color: #325935;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .kontaktformular {
     display: flex;
     flex-direction: column;
