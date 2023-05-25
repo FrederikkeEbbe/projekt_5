@@ -17,3 +17,10 @@ function batteriScroll() {
 function loveogreglerScroll() {
     document.getElementById("love-id").scrollIntoView();
 }
+
+
+/*let heroText = ["Alt du bør vide", "I hvert fald om elbiler."];
+
+for (i = 0; i < heroText.length; i++) {
+    document.getElementById("ptext").innerHTML += "<br>" + heroText[i];
+}*/
