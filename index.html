@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/bqh2qmg.css">
     <script src="/script.js" defer></script>
     <script src="/slide.js" defer></script>
+    <script src="scripts/frontpage.js" defer></script>
 </head>
 <body>
     <header class="index-header">
@@ -23,7 +24,7 @@
                     <li><a href="/index.html">Forside</a></li>
                     <li><a href="pages/kategori.html">Kategorier</a></li>
                     <li><a href="pages/nyheder.html">Nyheder</a></li>
-                    <li><a href="">Ladestandere</a></li>
+                    <li><a href="pages/kort.html">Ladestandere</a></li>
                     <li><a href="pages/om-os.html">Om os</a></li>
                     <li><a href="pages/kontakt.html">Kontakt</a></li>
                 </ul>
@@ -214,23 +215,37 @@
                 </div>
             </div>
         </section>
+
+        <section class="countdown-baggrund">
+            <div class="countdown-box">
+                <p class="countdown-text">Dage indtil næste nyhedsbrev</p>
+                <div class="countdown-flex-container">
+                    <div id="countdown-id"></div>
+                    <div id="countdown-dtm-text"></div>
+                </div>
+            <div class="btn-news-countdown">
+                <a class="btn-countdown" href = "pages/nyheder.html" >Tilmeld dig nyhedsbrev</a>
+            </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-general">
             <div class="footer-container-one">
-                <div class="footer-logo">GREENWHEELS</div>
-                <p class="footer-headline">Nyheder</p>
-                <p class="footer-text">Nyt om elbiler <br> Nyhedsbrev</p>
-                <p class="footer-headline">Kort</p>
-                <p class="footer-text">Ladestationer <br> Abonnement</p>
-                <p class="footer-headline">Om os</p>
-                <p class="footer-text">Hvem er vi <br> Kontakt <br> FAQ </p>
+                <div class="footer-logo"><a href = "index.html" ></a>
+                    GREENWHEELS </div>
+                <p class="footer-headline"> <a class="no-decoration" href = "pages/nyheder.html">Nyheder</a></p>
+                <p class="footer-text"><a class="no-decoration" href = "pages/nyheder.html">Nyt om elbiler</a> <br><a class="no-decoration" href = "pages/nyheder.html">Nyhedsbrev</a></p>
+                <p class="footer-headline"><a class="no-decoration" href = "pages/kort.html">Kort</a></p>
+                <p class="footer-text"><a class="no-decoration" href = "pages/kort.html">Ladestationer</a> <br><a class="no-decoration" href = "pages/kort.html">Abonnement</a></p>
+                <p class="footer-headline"><a class="no-decoration" href = "pages/om-os.html">Om os</a></p>
+                <p class="footer-text"><a class="no-decoration" href = "pages/om-os.html">Hvem er vi </a><br> <a class="no-decoration" href = "pages/kontakt.html">Kontakt</a> <br> <a class="no-decoration" href = "pages/kontakt.html">FAQ </a></p>
             </div>
             <div class="footer-container-two">
-                <p class="footer-headline"><br>Kategorier</p>
-                <p class="footer-text">Alle kategorier <br> Batteri <br> Modeller <br> Omkostninger
-                <br> Opladning <br> Priser <br> Rækkevidde <br> Strømkilde</p>
+                <p class="footer-headline"><br><a class="no-decoration" href = "pages/kategori.html">Kategorier</a></p>
+                <p class="footer-text"><a class="no-decoration" href = "pages/kategori.html">Alle kategorier</a> <br> <a class="no-decoration" href = "pages/kategori.html">Batteri</a> <br> <a class="no-decoration" href = "pages/kategori.html">Modeller</a> <br> <a class="no-decoration" href = "pages/kategori.html">Omkostninger</a>
+                <br> <a class="no-decoration" href = "pages/kategori.html">Opladning</a> <br> <a class="no-decoration" href = "pages/kategori.html">Priser</a> <br> <a class="no-decoration" href = "pages/kategori.html">Rækkevidde </a><br> <a class="no-decoration" href = "pages/kategori.html">Strømkilde</a></p>
                 <div>
                     <div class="icon-linkedin"></div>
                     <div class="icon-instagram"></div>
@@ -240,7 +255,7 @@
         </div>
         <div class="footer-kontakt">
             <div class="footer-kontakt-text">
-                <p class="footer-headline footer-kontakt-text">Kontakt os</p>
+                <p class="footer-headline footer-kontakt-text"><a class="no-decoration" href = "pages/kontakt.html">Kontakt os</a></p>
                 <p class="footer-text">+45 12 34 56 78 <br> greenwheels@contact.com <br> Odense - Danmark</p>
                 <p class="footer-text">CVR-nummer 12345678 <br> EAN-nummer 0000123456789</p>
             </div>
@@ -248,7 +263,6 @@
         <div class="footer-copyright">
             <p class="footer-copyright-text">copyright 2023 UCL Erhvervsakademi & Proffesionshøjskole</p>
         </div>
-        <!--greenwheels footer + kontakt + copyright-->
     </footer>
     
 </body>

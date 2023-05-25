@@ -91,14 +91,18 @@ footer {
 }
 
 .footer-headline {
-    color: #F2F2F2;
     font-weight: 600;
     padding-top: 15px;
 }
 
 .footer-text {
-    color: #F2F2F2;
     font-weight: 300;
+    color: #F2F2F2;
+
+}
+
+.no-decoration:hover {
+    color:#132623;
 }
 
 .footer-kontakt {
@@ -121,6 +125,24 @@ footer {
     color: #132623;
     text-align: center;
     padding: 20px;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+@media (min-width: 768px) {
+    .footer-general {
+        width: 50%;
+    }
+    .footer-kontakt {
+        width: 50%;
+        padding-top: 67px;
+    }
+    .footer-container-one {
+        margin-top: -6px;
+    }
 }
 
 /*index*/
@@ -503,16 +525,47 @@ a {
 
 
 /*Kort over ladestandere*/
-.kort-section {
-    padding: 32px;
-    background-color: rgba(237, 237, 237, 0.97)
-    
+
+.kort-contain {
+    padding-bottom: 40px;
+    width: 100%;
 }
 
-@media (min-width: 960px) {
-    .kort-section {
-        padding: 40px 32px;
-    }
+.kort-select-contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.kort-select {
+    border: solid #5E8C5D;
+}
+
+.kort-btn {
+    display: block;
+    align-self: center;
+    background-color: #214029;
+    color: #F2F2F2;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+}
+
+.kort-btn:hover {
+    opacity: .95;
+}
+
+.kort-btn:active {
+    background-color: #325935;
+}
+
+.kort-section {
+    background-color: rgba(237, 237, 237, 0.97);
+    padding: 32px;
 }
 
 .hide-txt-kort {
@@ -523,14 +576,51 @@ a {
     color: #214029;
 }
 
-.path-syd, .path-midt, .path-nord, .path-hoved, .path-sjælland {
-   fill: #5E8C5D;
+svg path{
+    cursor: pointer;
+    fill: #5E8C5D;
    stroke: #97BF7A;
 }
 
-.path-syd:hover, .path-midt:hover, .path-nord:hover, .path-hoved:hover, .path-sjælland:hover {
+svg path:hover{
     fill: #325935;
 }
+
+@media (min-width: 750px) {
+    .kort-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kort-contain {
+        width: 140%;
+        padding-bottom: 31px;
+    }
+
+    .kort-select-contain {
+        width: 60%;
+        align-self: center;
+        padding-left: 40px;
+    }  
+}
+
+@media (min-width: 850px) {
+    .kort-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .kort-contain {
+        width: 120%;
+    }
+
+    .kort-select-contain {
+        width: 80%;
+        align-self: center;
+        padding-left: 48px;
+    }  
+}
+
 
 /*nyheder*/
 
@@ -968,6 +1058,79 @@ padding-top: 24px;
 
 }
 
+/*Countdown på forside*/
+.countdown-baggrund {
+    background-image: url("../images/oplader-mand-gul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 450px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.countdown-box {
+    background: rgba(19, 38, 35, 0.5);
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.countdown-text {
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.countdown-flex-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#countdown-id {
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 38px;
+}
+
+#countdown-dtm-text {
+    color: #F2F2F2;
+    padding-left: 30px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.btn-news-countdown {
+    background-color: #214029;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 245px;  
+}
+
+.btn-countdown {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.btn-news-countdown:hover {
+    opacity: .95;
+}
+
+.btn-news-countdown:active {
+    background-color: #325935;
+}
+
+
 /*om os*/
 /*om os*/
 
@@ -997,14 +1160,13 @@ padding-top: 24px;
 .hero-txt-om-os {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
-    gap: 20px;
-    height: 150px;
+    align-self: flex-start;
+    height: 232px;
     padding: 32px 32px 32px 32px;
 
 }
 
-.om-os {
+.om-os, .faq-container {
     padding: 16px 32px 0px 32px;
 }
 
