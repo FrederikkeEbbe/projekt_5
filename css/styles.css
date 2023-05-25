@@ -877,7 +877,68 @@ background-color: black;
 }
 
 /*Countdown på forside*/
+.countdown-baggrund {
+    background-image: url("../images/oplader-mand-gul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 450px;
+    width: 100%;
+    justify-content: center;
+    padding: 60px;
+    margin-bottom: 40px;
+}
 
+.countdown-box {
+    background: rgba(19, 38, 35, 0.5);
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.countdown-text {
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.countdown-flex-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#countdown-id {
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 38px;
+}
+
+#countdown-dtm-text {
+    color: #F2F2F2;
+    padding-left: 30px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.btn-news-countdown {
+    background-color: #214029;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 245px;    
+}
+
+.btn-countdown {
+    color: #F2F2F2;
+    text-decoration: none;
+}
 
 
 /*om os*/

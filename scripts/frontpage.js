@@ -21,7 +21,7 @@ let countdownNyhedsbrev = setInterval(function() {
         document.getElementById("countdown-id").innerHTML = "Nyhedsbrevet er sendt!";
     }
     else {
-        document.getElementById("countdown-id").innerHTML = dage + " " + timer + " " + minutter;
+        document.getElementById("countdown-id").innerHTML = dage + "<br> " + timer + "<br> " + minutter;
     }
 
 }, 1000);
@@ -30,5 +30,5 @@ let countdownNyhedsbrev = setInterval(function() {
 let dageTimerMinutterArray = ["Dage", "Timer", "Minutter"];
 
 for(let i = 0; i < dageTimerMinutterArray.length; i++) {
-    document.getElementById("countdown-dtm-text").innerHTML += dageTimerMinutterArray[i] + " ";
+    document.getElementById("countdown-dtm-text").innerHTML += dageTimerMinutterArray[i] + "<br> ";
 }
