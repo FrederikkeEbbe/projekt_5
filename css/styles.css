@@ -505,7 +505,16 @@ a {
 /*Kort over ladestandere*/
 .kort-section {
     padding: 32px;
+    background-color: rgba(237, 237, 237, 0.97)
+    
 }
+
+@media (min-width: 960px) {
+    .kort-section {
+        padding: 40px 32px;
+    }
+}
+
 .hide-txt-kort {
     margin: 0 auto;
     position: absolute;
