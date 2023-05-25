@@ -133,7 +133,138 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Menu/navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-linje {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu-linje li {
+    list-style-type: none;
+}
+
+.menu-linje li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    display: block;
+    padding: 0px 15px 10px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+.menu-linje li a:hover {
+    box-shadow: 0 -3px 0px #F2F2F2 inset;
+}
+
+.hbmenu {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s; 
+}
+
+.hbmenu:before,
+.hbmenu::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #F2F2F2;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.hbmenu:before {
+    top: -10px;
+    width: 30px;
+}
+
+.hbmenu:after {
+    top: 10px; 
+    width: 30px;  
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hbmenu,
+.toggle-menu {
+    display: none;
+}
+
+nav input:checked ~ .hbmenu {
+    background: transparent;
+}
+
+nav input:checked ~ .hbmenu:before {
+   top: 0;
+   transform: rotate(-45deg);
+   width: 30px;
+}
+
+nav input:checked ~ .hbmenu:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+ }
+ 
+ .navigation input:checked ~ .menu-linje {
+    right: 0;
+    box-shadow: -20px 0 40px rgba(0, 0, 0, .3);
+ }
+
+@media (max-width: 960px) {
+    .hbmenu,
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu-linje {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #5E8C5D;
+        height: 700px;
+        width: 300px;
+        padding: 40px 32px;
+    }
+
+    .menu-linje li {
+        width: 100%;
+    }
+
+    .menu-linje li a {
+        border-bottom: solid #F2F2F2 ;
+        font-size: 16px;
+    }
+
+}
+
 /*header i index*/
+
 .index-header {
     background-image: url('/images/closeup-gylden-mark.jpg');
     background-repeat: no-repeat;
@@ -144,6 +275,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 120px;
+
 }
 
 #index-logo {
@@ -203,46 +335,82 @@ body {
 
 
 /*cards slide*/
-.index-card-sec {
-    padding: 16px 32px;
-}
-
-/*note note*/
-.card-index-et {
-    max-width: 350px;
-    margin: 24px 0px;
-    padding: 16px 24px;
-    background-color: #F2F2F2;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
+/* styleing af små dele*/
 .card-index-heading {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 0px 10px;
+    padding: 16px 32px;
+}
+
+.crd-indx-head {
+    padding: 16px 0;
 }
 
 .card-number {
     font-size: 60px;
 }
-
 .card-index-p p {
     margin-bottom: 20px;
 }
-
 .card-index-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* responsiv slide og styleing*/
+.index-cards {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+ .index-card-container {
+    padding: 0 8px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+ .index-card-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .index-card-et {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 570px;
+    margin: 24px 16px 24px 0;
+    padding: 16px 24px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .index-card-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .index-card-et {
+        width: 400px;
+        height: 540px;
+        margin: 24px 24px 24px 0;
+      }
+  }
 
-/*index card et responsive*/
-
-
+  @media (min-width: 1100px) {
+    .index-card-et {
+        width: 440px;
+        height: 500px;
+        margin: 24px 32px 24px 0;
+      }
+  }
 
 /*index  små kategorier*/
 .index-kategori-section {
@@ -298,9 +466,11 @@ a {
 
 /*Index - cards m billeder*/
 .card-index-to {
-    margin: 24px 0px;
+    flex: 0 0 auto;
+    margin: 24px 16px 24px 0;
     background-color: #F2F2F2;
-    max-width: 350px;
+    width: 350px;
+    height: 730px;
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -315,6 +485,43 @@ a {
     border-radius: 4px 4px 0px 0px;
 }
 
+@media (min-width: 600px) {
+    .card-index-to {
+        width: 410px;
+        height: 710px;
+        margin: 24px 24px 24px 0;
+      }
+  }
+
+  @media (min-width: 1100px) {
+    .card-index-to {
+        width: 440px;
+        height: 720px;
+        margin: 24px 32px 24px 0;
+      }
+  }
+
+
+/*Kort over ladestandere*/
+.kort-section {
+    padding: 32px;
+}
+.hide-txt-kort {
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    color: #214029;
+}
+
+.path-syd, .path-midt, .path-nord, .path-hoved, .path-sjælland {
+   fill: #5E8C5D;
+   stroke: #97BF7A;
+}
+
+.path-syd:hover, .path-midt:hover, .path-nord:hover, .path-hoved:hover, .path-sjælland:hover {
+    fill: #325935;
+}
 
 /*nyheder*/
 
@@ -501,7 +708,9 @@ background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
 }
 
 .category-square {
@@ -650,7 +859,6 @@ background-color: black;
 
 
 }
-@media (min-width: 768px) {}
 
 /*om os*/
 /*om os*/
@@ -693,6 +901,15 @@ background-color: black;
 }
 
 /*kontakt*/
+
+.hero-kontakt-os {
+    height: 64px;
+    display: flex;
+    background-color: #325935;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .kontaktformular {
     display: flex;
     flex-direction: column;
