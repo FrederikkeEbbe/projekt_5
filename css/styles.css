@@ -91,14 +91,18 @@ footer {
 }
 
 .footer-headline {
-    color: #F2F2F2;
     font-weight: 600;
     padding-top: 15px;
 }
 
 .footer-text {
-    color: #F2F2F2;
     font-weight: 300;
+    color: #F2F2F2;
+
+}
+
+.no-decoration:hover {
+    color:#132623;
 }
 
 .footer-kontakt {
@@ -121,6 +125,11 @@ footer {
     color: #132623;
     text-align: center;
     padding: 20px;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: #F2F2F2;
 }
 
 @media (min-width: 768px) {
@@ -1018,6 +1027,14 @@ background-color: black;
 .btn-countdown {
     color: #F2F2F2;
     text-decoration: none;
+}
+
+.btn-news-countdown:hover {
+    opacity: .95;
+}
+
+.btn-news-countdown:active {
+    background-color: #325935;
 }
 
 
