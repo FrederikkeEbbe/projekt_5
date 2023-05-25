@@ -973,7 +973,6 @@ background-color: black;
     max-height: 450px;
     width: 100%;
     justify-content: center;
-    padding: 60px;
     margin-bottom: 40px;
 }
 
@@ -982,6 +981,7 @@ background-color: black;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 32px;
     width: 100%;
 }
 
@@ -1021,7 +1021,7 @@ background-color: black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    width: 245px;    
+    width: 245px;  
 }
 
 .btn-countdown {
