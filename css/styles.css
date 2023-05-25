@@ -505,7 +505,16 @@ a {
 /*Kort over ladestandere*/
 .kort-section {
     padding: 32px;
+    background-color: rgba(237, 237, 237, 0.97)
+    
 }
+
+@media (min-width: 960px) {
+    .kort-section {
+        padding: 40px 32px;
+    }
+}
+
 .hide-txt-kort {
     margin: 0 auto;
     position: absolute;
@@ -560,18 +569,42 @@ background-image: url(../images/oplader-mand-gul.jpg);
     font-size: 24px;
 }
 .ny-box img{
-    height: 200px;
-    width: 100%;
+   max-width: 100%;
 }
 .ny-box-img{
     padding: 32px 0px;
+    object-fit: cover;
 }
 .ny-container{
     padding: 0px 32px;
+    max-width: 1000px;
 }
 .ny-box{
     background-color: lightgrey;
     padding: 0px 32px;
+    margin: 32px 0px;
+}
+.ny-container h2{  
+padding-top: 24px;
+}
+.ny-box h3{
+    padding-top: 24px;
+}
+.ny-box h6{
+    padding-bottom: 16px;
+}
+#more{
+    display: none;
+}
+#myBtn{
+    background-color: #214029;
+    color: #F2F2F2;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 .ny-box-btn{
     background-color: #214029;
@@ -581,6 +614,12 @@ background-image: url(../images/oplader-mand-gul.jpg);
     border-radius: 50px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 24px 0px;
+}
+.ny-box-btn a{
+text-decoration: none;
+color: white;
 }
 .ny-box-btn:hover {
     opacity: .95;
@@ -588,7 +627,6 @@ background-image: url(../images/oplader-mand-gul.jpg);
 .ny-box-btn:active {
     background-color: #325935;
 }
-
 
 .ny-sub,
 .ny-ark {
@@ -612,7 +650,7 @@ background-image: url(../images/oplader-mand-gul.jpg);
     padding: 0px 32px;
 }
 
-.ny-dropdown-single {
+.ny-dropdown-single, .om-dropdown-single {
     padding: 2px 0px;
 }
 
@@ -659,6 +697,17 @@ background-image: url(../images/oplader-mand-gul.jpg);
 .active:after {
     content: "\2796";
     /* - tegn */
+}
+
+@media (min-width: 768px){
+.ny-container{
+background-color: black;
+}
+}
+
+@media (min-width: 960px){
+    .ny-container{
+        background-color: red;
 }
 
 
