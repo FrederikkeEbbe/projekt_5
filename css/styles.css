@@ -905,9 +905,8 @@ background-color: black;
 .hero-txt-om-os {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
-    gap: 20px;
-    height: 150px;
+    align-self: flex-start;
+    height: 232px;
     padding: 32px 32px 32px 32px;
 
 }
