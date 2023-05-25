@@ -91,14 +91,18 @@ footer {
 }
 
 .footer-headline {
-    color: #F2F2F2;
     font-weight: 600;
     padding-top: 15px;
 }
 
 .footer-text {
-    color: #F2F2F2;
     font-weight: 300;
+    color: #F2F2F2;
+
+}
+
+.no-decoration:hover {
+    color:#132623;
 }
 
 .footer-kontakt {
@@ -121,6 +125,24 @@ footer {
     color: #132623;
     text-align: center;
     padding: 20px;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+@media (min-width: 768px) {
+    .footer-general {
+        width: 50%;
+    }
+    .footer-kontakt {
+        width: 50%;
+        padding-top: 67px;
+    }
+    .footer-container-one {
+        margin-top: -6px;
+    }
 }
 
 /*index*/
@@ -949,10 +971,10 @@ background-color: black;
     background-image: url("../images/oplader-mand-gul.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     max-height: 450px;
     width: 100%;
     justify-content: center;
-    padding: 60px;
     margin-bottom: 40px;
 }
 
@@ -961,6 +983,7 @@ background-color: black;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 32px;
     width: 100%;
 }
 
@@ -999,13 +1022,20 @@ background-color: black;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    width: 245px;    
+    width: 245px;  
 }
 
 .btn-countdown {
     color: #F2F2F2;
     text-decoration: none;
+}
+
+.btn-news-countdown:hover {
+    opacity: .95;
+}
+
+.btn-news-countdown:active {
+    background-color: #325935;
 }
 
 
