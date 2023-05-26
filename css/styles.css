@@ -132,6 +132,11 @@ footer {
     color: #F2F2F2;
 }
 
+.no-decoration-logo {
+    text-decoration: none;
+    color: #97BF7A;
+}
+
 @media (min-width: 768px) {
     .footer-general {
         width: 50%;
@@ -742,10 +747,8 @@ svg path::after {
 }
 
 .ny-hero {
-    background: rgba(0, 0, 0, .3);
     margin-top: 250px;
 }
-
 
 .ny-box img {
     max-width: 100%;
