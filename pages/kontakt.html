@@ -7,6 +7,7 @@
     <title>Kontakt os</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/bqh2qmg.css">
+    <script src="../scripts/kontakt.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,7 +29,6 @@
                 </nav>
             </div>
     </header>
-    <h1>Kontakt os</h1>
     <section class="kontakt-os">
         <h3>Skriv til os</h3>
         <form action="" class="kontaktformular">
@@ -47,6 +47,7 @@
         </form>
     </section>
     <section class="information">
+        <div class="info-txt">
         <h2>Information</h2>
         <br>
         <h4>Telefon</h4>
@@ -60,6 +61,7 @@
         <br>
         <p>CVR-nummer: 12345678</p>
         <p>EAN-nummer: 0000123456789</p>
+    </div>
     </section>
     <section class="faq-container">
         <h3>Ofte stillede spørgsmål</h3><br>
@@ -87,23 +89,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
-    
-        <script>
-            var coll = document.getElementsByClassName("faq-collapsible");
-            var i;
-    
-            for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-            }
-        </script>
+    </section>
+
+        <br> <br>
     <footer>
         <div class="footer-general">
             <div class="footer-container-one">
