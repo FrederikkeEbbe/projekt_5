@@ -713,6 +713,9 @@ padding-top: 24px;
 .ny-box h3{
     padding-top: 24px;
 }
+.ny-box h5{
+    padding-bottom: 8px;
+}
 .ny-box h6{
     padding-bottom: 16px;
 }
@@ -739,7 +742,7 @@ padding-top: 24px;
 #more{
     display: none;
 }
-#myBtn{
+#nyBtn{
     background-color: #214029;
     color: #F2F2F2;
     text-decoration: none;
