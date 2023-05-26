@@ -132,6 +132,11 @@ footer {
     color: #F2F2F2;
 }
 
+.no-decoration-logo {
+    text-decoration: none;
+    color: #97BF7A;
+}
+
 @media (min-width: 768px) {
     .footer-general {
         width: 50%;
