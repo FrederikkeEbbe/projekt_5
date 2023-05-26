@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 30px;
     color: #325935;
     font-family: strenuous, sans-serif;
     font-weight: 700;
@@ -301,10 +301,6 @@ nav input:checked~.hbmenu:after {
     flex-wrap: wrap;
     gap: 120px;
 
-}
-
-#index-logo {
-    font-size: 30px;
 }
 
 .bm-box {
@@ -770,9 +766,11 @@ svg path::after {
 .ny-container h2 {
     padding-top: 24px;
 }
-.ny-box h5{
+
+.ny-box h5 {
     padding-bottom: 8px;
 }
+
 .ny-box h3 {
     padding-top: 24px;
 }
@@ -875,7 +873,7 @@ svg path::after {
 .ny-collapsible,
 .om-collapsible,
 .faq-collapsible {
-    background-color: #5E8C5D;
+    background-color: #325935;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -893,7 +891,7 @@ svg path::after {
 .ny-collapsible:hover,
 .om-collapsible:hover,
 .faq-collapsible:hover {
-    background-color: green;
+    opacity: .90;
 }
 
 /* grafik på indhld */
