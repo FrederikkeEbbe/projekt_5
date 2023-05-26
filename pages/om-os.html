@@ -7,18 +7,20 @@
     <title>Lær mere om GreenWheels</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/bqh2qmg.css">
+    <script src="../scripts/om-os.js" defer></script>
 </head>
 <body>
 <header>
     <div class="hero-om-os">
         <div class="logo-bm-om-os">
-            <p class="logo" id="logo-white";>GREENWHEELS</p>
-            <nav class="nav-om-os navigation">
+            <p class="logo logo-white">GREENWHEELS</p>
+            <nav class="navigation">
+
                 <input type="checkbox" class="toggle-menu">
                 <div class="hbmenu"></div>
 
                 <ul class="menu-linje">
-                    <li><a href="/index.html">Forside</a></li>
+                    <li><a href="../index.html">Forside</a></li>
                     <li><a href="kategori.html">Kategorier</a></li>
                     <li><a href="nyheder.html">Nyheder</a></li>
                     <li><a href="kort.html">Ladestandere</a></li>
@@ -62,23 +64,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
-
-    <script>
-        var coll = document.getElementsByClassName("om-collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
-            }
-        });
-        }
-    </script>
 
 </section>
 <section class="kontakt-os">
