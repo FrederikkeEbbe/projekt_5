@@ -7,67 +7,17 @@ const zeaContain = document.getElementById('reg-zea');
 
 let isClicked = true;
 
-//sjælland
-let visZea = function(){
-  if(isClicked) {
-    zeaContain.style.display = 'block';
-    isClicked = false;
+
+let visTxt = function(el){
+  console.log(el)
+  const txtContain = document.getElementById(el);
+  if(txtContain.style.display != 'block') {
+    txtContain.style.display = 'block';
   }
   else{
-    zeaContain.style.display = 'none';
-    isClicked = true;
+    txtContain.style.display = 'none';
   }
 }
-
-//hovedstaden
-let visHoved = function(){
-  if(isClicked) {
-    hovedContain.style.display = 'block';
-    isClicked = false;
-  
-  }
-  else{
-    hovedContain.style.display = 'none';
-    isClicked = true;
-  }
-}
-
-//syd
-let visSyd = function(){
-  if(isClicked) {
-    sydContain.style.display = 'block';
-    isClicked = false;
-  }
-  else{
-    sydContain.style.display = 'none';
-    isClicked = true;
-  }
-}
-
-//midt
-let visMidt = function(){
-  if(isClicked) {
-    midtContain.style.display = 'block';
-    isClicked = false;
-  }
-  else{
-    midtContain.style.display = 'none';
-    isClicked = true;
-  }
-}
-
-//nord
-let visNord = function(){
-  if(isClicked) {
-    nordContain.style.display = 'block';
-    isClicked = false;
-  }
-  else{
-    nordContain.style.display = 'none';
-    isClicked = true;
-  }
-}
-
 
 // først henter jeg path elementerne fra HTML (dom) 
 let paths = document.getElementsByTagName('path')
@@ -76,7 +26,7 @@ let paths = document.getElementsByTagName('path')
 //den bruger min 'click' event og kører funktionen toggleClass
 
 for(let i=0; i<paths.length; i++){
-    paths[i].addEventListener('click', toggleKort)
+    paths[i].addEventListener('click',toggleKort)
 }
 
 //nu kan man i min 'toggleKort' funktion toggle 'kort-clicked' classen. En slags tænd og sluk
