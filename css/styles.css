@@ -181,7 +181,7 @@ body {
     color: #F2F2F2;
     text-decoration: none;
     display: block;
-    padding: 0px 15px 10px;
+    padding: 0px 15px;
     line-height: 1;
     transition: 0.5s;
 }
@@ -310,7 +310,7 @@ nav input:checked~.hbmenu:after {
 }
 
 .index-header-contain {
-    padding: 8px 32px;
+    padding: 32px 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -449,10 +449,7 @@ nav input:checked~.hbmenu:after {
     padding: 16px 32px;
 }
 
-.index-kategori-section-contain>h2,
-a {
-    margin: 32px 0px;
-}
+
 
 .index-kategori-fakta {
     background-color: #325935;
@@ -742,6 +739,7 @@ svg path::after {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .ny-hero {
     background: rgba(0, 0, 0, .3);
     margin-top: 250px;
@@ -1237,7 +1235,7 @@ svg path::after {
 }
 
 .logo-bm-om-os {
-    padding: 0px 32px;
+    padding: 32px 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1264,7 +1262,6 @@ svg path::after {
 /*kontakt*/
 
 .hero-kontakt-os {
-    height: 64px;
     display: flex;
     background-color: #325935;
     justify-content: space-between;
