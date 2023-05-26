@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 30px;
     color: #325935;
     font-family: strenuous, sans-serif;
     font-weight: 700;
@@ -301,10 +301,6 @@ nav input:checked~.hbmenu:after {
     flex-wrap: wrap;
     gap: 120px;
 
-}
-
-#index-logo {
-    font-size: 30px;
 }
 
 .bm-box {
@@ -829,9 +825,11 @@ svg path::after {
 .ny-container h2 {
     padding-top: 24px;
 }
-.ny-box h5{
+
+.ny-box h5 {
     padding-bottom: 8px;
 }
+
 .ny-box h3 {
     padding-top: 24px;
 }
