@@ -931,7 +931,7 @@ svg path::after {
 .ny-collapsible,
 .om-collapsible,
 .faq-collapsible {
-    background-color: #5E8C5D;
+    background-color: #325935;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -949,7 +949,7 @@ svg path::after {
 .ny-collapsible:hover,
 .om-collapsible:hover,
 .faq-collapsible:hover {
-    background-color: green;
+    opacity: .90;
 }
 
 /* grafik på indhld */
