@@ -736,80 +736,21 @@ svg path::after {
 
 
 /*nyheder*/
-
 .ny-header {
-    min-height: 200px;
-}
-
-.ny-menu-linje {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    transition: 0.5s;
-}
-
-.ny-menu-linje li {
-    list-style-type: none;
-}
-
-.ny-menu-linje a {
-    color: black;
-}
-
-.ny-menu-linje li a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 0px 15px 10px;
-    line-height: 1;
-    transition: 0.5s;
-}
-
-.ny-menu-linje li a:hover {
-    box-shadow: 0 -3px 0px green inset;
-}
-
-
-
-
-
-.ny-hero-contain {
+    background-image: url('/images/oplader-mand-gul.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-.ny-img-slider {
-    background-color: grey;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.ny-img-slider {
-    background-image: url(../images/oplader-mand-gul.jpg);
-}
-
 .ny-hero {
-    margin-top: auto;
     background: rgba(0, 0, 0, .3);
-    padding: 16px 32px;
+    margin-top: 250px;
 }
 
-.ny-hero-h2 {
-    color: #F2F2F2;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 40px;
-}
-
-.ny-hero-p {
-    color: #F2F2F2;
-    font-size: 24px;
-}
 
 .ny-box img {
     max-width: 100%;
@@ -895,7 +836,7 @@ svg path::after {
 }
 
 .ny-box-btn:hover,
-#myBtn:hover {
+#nyBtn:hover {
     opacity: .95;
 }
 
