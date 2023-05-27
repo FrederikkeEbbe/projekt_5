@@ -456,7 +456,6 @@ nav input:checked~.hbmenu:after {
 }
 
 
-
 .index-kategori-fakta {
     background-color: #325935;
     color: #F2F2F2;
@@ -466,9 +465,13 @@ nav input:checked~.hbmenu:after {
     border-radius: 15px;
     display: flex;
     flex-direction: row;
+    align-content: center;
     align-items: center;
     gap: 0px 32px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ikon-index-fact {
+    padding-bottom: 12px;
 }
 
 .index-kategori-fakta p {
@@ -1021,7 +1024,7 @@ svg path::after {
     padding-top: 32px;
 }
 
-.fa-solid {
+.icon-category-page {
     color: #ffffff;
     margin: auto;
     padding-top: 28px;
