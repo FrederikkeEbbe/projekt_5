@@ -821,6 +821,9 @@ svg path::after {
     height: 40px;
     margin-left: 16px;
 }
+#ny-pil{
+    padding: 0px;
+}
 
 .ny-box-btn {
     background-color: #214029;

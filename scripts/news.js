@@ -5,11 +5,11 @@ let btnText = document.getElementById("nyBtn");
 
 if (dots.style.display === "none") {
   dots.style.display = "inline";
-  btnText.innerHTML = "test";
+  btnText.innerHTML = "Åben";
   moreText.style.display = "none";
 } else {
   dots.style.display = "none";
-  btnText.innerHTML = "test";
+  btnText.innerHTML = "Luk";
   moreText.style.display = "inline";
 }
 }
