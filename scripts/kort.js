@@ -1,15 +1,14 @@
-//Kort const id
+
+/* fra tidligere brugt JS
 const hovedContain = document.getElementById('reg-hoved');
 const sydContain = document.getElementById('reg-syd');
 const midtContain = document.getElementById('reg-midt');
 const nordContain = document.getElementById('reg-nord');
 const zeaContain = document.getElementById('reg-zea');
+*/
 
-let isClicked = true;
-
-
+//tekst til kort - html oncklick - css display
 let visTxt = function(el){
-  console.log(el)
   const txtContain = document.getElementById(el);
   if(txtContain.style.display != 'block') {
     txtContain.style.display = 'block';
@@ -19,17 +18,13 @@ let visTxt = function(el){
   }
 }
 
-// først henter jeg path elementerne fra HTML (dom) 
+// fill til kort - click - css
 let paths = document.getElementsByTagName('path')
-
-//nu kan jeg lave et loop og tilføje en eventlistener til hver enkelt path
-//den bruger min 'click' event og kører funktionen toggleClass
 
 for(let i=0; i<paths.length; i++){
     paths[i].addEventListener('click',toggleKort)
 }
 
-//nu kan man i min 'toggleKort' funktion toggle 'kort-clicked' classen. En slags tænd og sluk
 function toggleKort() {
     this.classList.toggle('kort-clicked')
 }
