@@ -7,6 +7,13 @@ const nordContain = document.getElementById('reg-nord');
 const zeaContain = document.getElementById('reg-zea');
 */
 
+
+
+
+
+
+
+
 //tekst til kort - html oncklick - css display
 let visTxt = function(el){
   const txtContain = document.getElementById(el);
@@ -28,6 +35,25 @@ for(let i=0; i<paths.length; i++){
 function toggleKort() {
     this.classList.toggle('kort-clicked')
 }
+
+//tak fordi i så med :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 for loop note
