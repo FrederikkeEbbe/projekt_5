@@ -1,10 +1,11 @@
+function opladningScroll() {
+    document.getElementById("opladning-id").scrollIntoView();
+}
+
 function omkostningerScroll() {
 document.getElementById("omkostninger-id").scrollIntoView();
 }
 
-function opladningScroll() {
-    document.getElementById("opladning-id").scrollIntoView();
-}
 
 function priserScroll() {
     document.getElementById("priser-id").scrollIntoView();
