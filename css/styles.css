@@ -308,7 +308,7 @@ nav input:checked~.hbmenu:after {
 /*header i index*/
 
 .index-header {
-    background-image: url('images/closeup-gylden-mark.jpg');
+    background-image: url('../images/closeup-gylden-mark.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
