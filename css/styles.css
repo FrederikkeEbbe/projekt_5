@@ -823,7 +823,7 @@ svg path::after {
 }
 
 
-#nyBtn {
+#nyBtn, #nyBtn1, #nyBtn2, #nyBtn3 {
     background-color: #214029;
     color: #F2F2F2;
     text-decoration: none;
@@ -835,9 +835,7 @@ svg path::after {
     height: 40px;
     margin-left: 16px;
 }
-#ny-pil{
-    padding: 0px;
-}
+
 
 .ny-box-btn {
     background-color: #214029;
