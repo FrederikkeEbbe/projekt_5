@@ -1,6 +1,6 @@
 //Countdown
 
-let nyhedsbrevSendes = new Date("June 2, 2023 19:00:00").getTime();
+let nyhedsbrevSendes = new Date("June 20, 2023 19:00:00").getTime();
 
 let countdownNyhedsbrev = setInterval(function() {
     
