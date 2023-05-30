@@ -308,7 +308,7 @@ nav input:checked~.hbmenu:after {
 /*header i index*/
 
 .index-header {
-    background-image: url('../images/closeup-gylden-mark.jpg');
+    background-image: url("../images/closeup-gylden-mark.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -750,7 +750,7 @@ svg path::after {
 
 /*nyheder*/
 .ny-header {
-    background-image: url('/images/oplader-mand-gul.jpg');
+    background-image: url("../images/oplader-mand-gul.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
